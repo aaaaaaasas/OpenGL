@@ -1,4 +1,14 @@
-int main()
+#include<windows.h>
+#include "Engine.h"
+int APIENTRY wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE
+ hPrevInstance, _In_ LPWSTR lpCmdLine, _In_ int nCmdShow)
 {
+	Engine engine(hInstance, "window class");
+	engine.Initialize("window_title", 800, 600, nCmdShow);
+	while (engine.ProcessMessage())
+	{
+		engine.Renderer();
+		Sleep(10);
+	}
 	return 0;
 }

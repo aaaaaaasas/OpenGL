@@ -1,3 +1,5 @@
 ﻿D:\VS2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(505,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
-  main.cpp
+  Engine.cpp
+D:\gitspace\OpenGL\src\RenderVideo\Engine.cpp(19,1): warning C4297: “Engine::~Engine”: 假定函数不引发异常，但确实发生了
+D:\gitspace\OpenGL\src\RenderVideo\Engine.cpp(19,1): message : 析构函数或释放器具有一个(可能是隐含的)非引发异常规范
   RenderVideo.vcxproj -> D:\gitspace\OpenGL\bin\RenderVideo.exe
